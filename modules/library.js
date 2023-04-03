@@ -1,5 +1,3 @@
-import { timeDate } from './globalconst.js';
-
 const loadAwesomeBooks = () => {
     let stock = [];
 
@@ -101,15 +99,7 @@ const loadAwesomeBooks = () => {
    const title = document.querySelector('#title').value;
    const author = document.querySelector('#author').value;
    addBook(title, author);
-   //displayBooks();
  });
-    
- // Add date & time
-  const date = new Date();
-  timeDate.innerHTML = date.toString();
-  //}
 }
 
 export default loadAwesomeBooks;
-
-
