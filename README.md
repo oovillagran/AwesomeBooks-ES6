@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>Project Review (Trials)</b></h3>
+  <h3><b>Awesome Books ES6</b></h3>
 
 </div>
 
@@ -33,10 +33,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Project Review (Trials)<a name="about-project"></a>
+# 📖 Awesome Books<a name="about-project"></a>
 
 
-**Project Review (Trials)** intends to execute my first code review, as in week number one from Microverse software developer program I upgraded my knowledge and skills in *HTML* and *CSS*. This code review is going to be performance about the **Built a Survey Form project** from trials done in the admission proccess.
+**Awesome Books ES6** is a reestructured website from the original [Awesome Books](https://github.com/oovillagran/AwesomeBooks) that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also needed to dynamically modify the DOM and added basic events.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,15 +57,23 @@
   </ul>
 </details>
 
+<details>
+  <summary>JavaScript</summary>
+  <ul>
+    <li>JavaScript</li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 
 - Creating branches on repositories.
-- Use of linter on HTML&CSS project.
-- Write a correct descriptive README file.
-- Perform a code review in a HTML and CSS project.
+- Use of linter on HTML&CSS&JavaScript project.
+- Correct use of GitHub flow.
+- Follow Microverse's list of best practices for JavaScript projects.
+- Implement a basic UI with plain HTML for a basic webpage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,7 +82,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- N/A
+- Here is the [live-demo](https://oovillagran.github.io/AwesomeBooks/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +108,7 @@ Clone this repository to your desired folder:
  
  ```bash
  cd my-folder
- git clone git@github.com:oovillagran/Portfolio-project.git
+ git clone git@github.com:oovillagran/AwesomeBooks.git
 ```
 
 ### Install
@@ -126,14 +134,13 @@ To run tests, execute the following command:
 
 ### Deployment
 
-- N/A
+-Follow GitHub pages guideliness.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Oscar Villagran**
 
@@ -149,11 +156,9 @@ To run tests, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-
 - [ ] **Use of linter in HTML&CSS projects**
 - [ ] **Use README template file**
-- [ ] **Ask for a code review**
-- [ ] **Follow the list from the article ["How_to_give_a_code_review?"](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/code-review/articles/give_code_review_basics.md).**
+- [ ] **Ask for a code review****
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +185,7 @@ If you like this project feel free to make any comment, all contributions are we
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse comunity, especially reviewers guys, they do an excellent job. I thank my learning, morning session and standup partners for supporting me.
+We would like to thank Microverse comunity, they do an excellent job. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
