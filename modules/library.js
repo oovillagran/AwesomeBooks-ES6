@@ -8,8 +8,19 @@ const loadAwesomeBooks = () => {
     }
   };
 
-  // function display the books
+  // function remove books
 
+  function removeBook(index) {
+    // Eliminar el libro del array
+    stock.splice(index, 1);
+    // saved updated array in localStorage
+    localStorage.setItem('stockedBooks', JSON.stringify(stock));
+    window.location.reload();
+    //displayBooks();
+  }
+  
+  // function display the books
+  
   function displayBooks() {
     const bookList = document.getElementById('library');
     bookList.innerHTML = '';
@@ -41,7 +52,7 @@ const loadAwesomeBooks = () => {
       aBook.appendChild(line);
     });
   }
-  
+
   // add a new book
   function addBook(title, author) {
     if (title !== '' && author !== '') {
@@ -72,17 +83,6 @@ const loadAwesomeBooks = () => {
         }, 3000);
       }
     }
-  }
-
-  // function remove books
-
-  function removeBook(index) {
-    // Eliminar el libro del array
-    stock.splice(index, 1);
-    // saved updated array in localStorage
-    localStorage.setItem('stockedBooks', JSON.stringify(stock));
-    window.location.reload();
-     displayBooks();
   }
 
   // load books from local storage on page load
