@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Awesome Books</title>
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <div class="image-container" id="logo">
+        <a href="index.html"><img src="logo.png" alt="Awesome Books" /></a>
+      </div>
+      <ul>
+        <a class="menu-link" id="link-list" href="#book-list">List</a>
+        <a class="menu-link" id="link-add" href="#add-section">Add New</a>
+        <a class="menu-link" id="link-contact" href="#contact-info">Contact</a>
+      </ul>
+    </nav> 
+  </header>
+  <main>
+    <section id="date">
+
+    </section>
+        <!--Book Shelf-->
+    <section id="book-list" class="book-list">
+      <h1>All Awesome books</h1>
+      <div class="gray-line"></div>
+        <!-- To display the existing books -->
+      <div id="library">
+      </div>
+    </section>
+
+        <!-- To add a book -->
+    <section id="add-section">
+      <h3>Add a new book</h3>
+      <div class="gray-line"></div>
+      <form id="add-form" class="add-form" action="" method="">
+				<label for="title">
+					<input type="text" name="title" id="title" class="add-form__input" placeholder="Book title" required>
+				</label>
+				<label for="author">
+					<input type="text" name="author" id="author" class="add-form__input" placeholder="Book author" required>
+				</label>
+				<button type="button" id="add-button">Add</button>
+				<div id="error"></div>
+			</form>
+    </section>
+
+        <!-- Contact Info -->
+    <section id="contact-info">
+      <h3>Contact information</h3>
+      <div class="gray-line"></div>
+      <p>Do have any questions or you just want to say "Hello"? You can reach out to us!</p>
+      <ul>
+        <li><p>Our e-mail: <a href="mailto:mail@mail.com">mail@mail.com</a></p></li>
+        <li><p>Our phone number: 0043586534422</p></li>
+        <li><p>Our address: Streetname 22, 84503 City, Country</p></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright</p>
+  </footer>
+  <!-- <script type="module" src="index.js"></script> -->
+  <script type="module" src="index.js"></script>
+</body>
+</html>

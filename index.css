@@ -1,0 +1,279 @@
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -8%;
+  text-align: center;
+}
+
+#date,
+a,
+span,
+p,
+button,
+div {
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.gray-line {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: gray;
+  margin: 1rem;
+}
+
+/* Menu styles */
+nav.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #3e3e3e;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 1rem;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+
+.image-container div {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo img {
+  align-items: center;
+  height: 1rem;
+}
+
+/* Main */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem 5rem 5rem;
+  align-items: center;
+}
+
+/* Actual time and date */
+#date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* Book Shelf styles */
+#book-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#library {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0d9d4;
+  border-radius: 20px;
+  width: 80%;
+  height: min-content;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+#library div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 90%;
+  height: 3.5rem;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+}
+
+#library div span {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  margin-bottom: 1rem;
+  color: dimgrey;
+}
+
+#library div h2 {
+  text-align: center;
+  margin: 0 1rem 0 1.5rem;
+  width: 50%;
+  max-height: min-content;
+}
+
+footer p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#library div p {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+form button {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-weight: bold;
+  text-align: center;
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem;
+  height: 2rem;
+}
+
+#library button {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: lightcoral;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Form styles */
+#add-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#title,
+#author {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+#error {
+  font-weight: 600;
+  color: #ff6163;
+  padding-top: 1rem;
+  align-self: flex-end;
+}
+
+/* Contact Styles */
+#contact-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#contact-info p:nth-child(3) {
+  padding: 1rem;
+}
+
+#contact-info li {
+  padding: 0.4rem 0;
+}
+
+#contact-info a {
+  color: #36b;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #3e3e3e;
+  margin-top: auto;
+  width: 100%;
+}
