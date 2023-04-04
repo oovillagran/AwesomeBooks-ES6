@@ -16,11 +16,10 @@ const loadAwesomeBooks = () => {
     // saved updated array in localStorage
     localStorage.setItem('stockedBooks', JSON.stringify(stock));
     window.location.reload();
-    //displayBooks();
   }
-  
+
   // function display the books
-  
+
   function displayBooks() {
     const bookList = document.getElementById('library');
     bookList.innerHTML = '';
