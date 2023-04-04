@@ -2,7 +2,7 @@ const loadAwesomeBooks = () => {
   let stock = [];
 
   // load books from local stoarage
-  const loadBooks = () => {
+  let loadBooks = () => {
     if (localStorage.getItem('stockedBooks')) {
       stock = JSON.parse(localStorage.getItem('stockedBooks'));
     }
@@ -10,8 +10,8 @@ const loadAwesomeBooks = () => {
 
   // function remove books
 
-  function removeBook(index) {
-    // Eliminar el libro del array
+  let removeBook = (index) => {
+    // Delete the book from the array
     stock.splice(index, 1);
     // saved updated array in localStorage
     localStorage.setItem('stockedBooks', JSON.stringify(stock));
@@ -20,7 +20,7 @@ const loadAwesomeBooks = () => {
 
   // function display the books
 
-  function displayBooks() {
+  let displayBooks = () => {
     const bookList = document.getElementById('library');
     bookList.innerHTML = '';
     stock.forEach((element, index) => {
@@ -53,7 +53,7 @@ const loadAwesomeBooks = () => {
   }
 
   // add a new book
-  function addBook(title, author) {
+  let addBook = (title, author) => {
     if (title !== '' && author !== '') {
       const newBook = { title, author };
       // Save the book
