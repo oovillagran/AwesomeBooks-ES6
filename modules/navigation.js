@@ -1,4 +1,4 @@
-export const navigation = () => {
+const navigation = () => {
   // Get nav bar links
   const linkList = document.querySelector('#link-list');
   const linkAdd = document.querySelector('#link-add');
@@ -8,7 +8,7 @@ export const navigation = () => {
   const addSection = document.querySelector('#add-section');
   const contactSection = document.querySelector('#contact-info');
 
-// Listeners for the links events
+  // Listeners for the links events
   linkList.addEventListener('click', (event) => {
     event.preventDefault();
     bookListSection.style.display = 'flex';
@@ -30,3 +30,5 @@ export const navigation = () => {
     contactSection.style.display = 'flex';
   });
 };
+
+export default navigation;

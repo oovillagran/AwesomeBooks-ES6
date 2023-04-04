@@ -6,50 +6,7 @@ const loadAwesomeBooks = () => {
     if (localStorage.getItem('stockedBooks')) {
       stock = JSON.parse(localStorage.getItem('stockedBooks'));
     }
-  }
-
-    // add a new book
-  function addBook(title, author) {
-    if (title !== '' && author !== '') {
-      const newBook = { title, author };
-      // Save the book
-      stock.push(newBook);
-        // Save on local storage
-      localStorage.setItem('stockedBooks', JSON.stringify(stock));
-        // Reset form values
-      document.getElementById('add-form').reset();
-      displayBooks();
-    } else {
-      const messages = [];
-      if (title === '' && author === '') {
-        messages.push('Please enter the book\'s title and author.');
-      } else if (author === '' && title !== '') {
-        messages.push('Please enter the book\'s author.');
-      } else if (title === '' && author !== '') {
-        messages.push('Please enter the book\'s title.');
-      }
-
-      if (messages.length > 0) {
-        const errorElement = document.getElementById('error');
-        errorElement.innerText = messages.join(', ');
-      // Remove the message after 3 seconds
-        setTimeout(() => {
-          errorElement.remove();
-        }, 3000);
-      }
-    }
-  }
-
-  // function remove books
-
-  function removeBook(index) {
-    // Eliminar el libro del array
-    stock.splice(index, 1);
-    // saved updated array in localStorage
-    localStorage.setItem('stockedBooks', JSON.stringify(stock));
-    window.location.reload();
-    displayBooks();
-  }
+  };
 
   // function display the books
 
@@ -84,12 +41,55 @@ const loadAwesomeBooks = () => {
       aBook.appendChild(line);
     });
   }
+  
+  // add a new book
+  function addBook(title, author) {
+    if (title !== '' && author !== '') {
+      const newBook = { title, author };
+      // Save the book
+      stock.push(newBook);
+      // Save on local storage
+      localStorage.setItem('stockedBooks', JSON.stringify(stock));
+      // Reset form values
+      document.getElementById('add-form').reset();
+      displayBooks();
+    } else {
+      const messages = [];
+      if (title === '' && author === '') {
+        messages.push('Please enter the book\'s title and author.');
+      } else if (author === '' && title !== '') {
+        messages.push('Please enter the book\'s author.');
+      } else if (title === '' && author !== '') {
+        messages.push('Please enter the book\'s title.');
+      }
+
+      if (messages.length > 0) {
+        const errorElement = document.getElementById('error');
+        errorElement.innerText = messages.join(', ');
+        // Remove the message after 3 seconds
+        setTimeout(() => {
+          errorElement.remove();
+        }, 3000);
+      }
+    }
+  }
+
+  // function remove books
+
+  function removeBook(index) {
+    // Eliminar el libro del array
+    stock.splice(index, 1);
+    // saved updated array in localStorage
+    localStorage.setItem('stockedBooks', JSON.stringify(stock));
+    window.location.reload();
+     displayBooks();
+  }
 
   // load books from local storage on page load
   window.addEventListener('load', () => {
-      loadBooks();
-      displayBooks();
-    });
+    loadBooks();
+    displayBooks();
+  });
 
   const addButton = document.getElementById('add-button');
   addButton.addEventListener('click', (event) => {
